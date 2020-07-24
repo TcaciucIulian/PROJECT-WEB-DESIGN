@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> BeStrong </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="stylesheets/produsecss.css">
+        <link rel="shortcut icon" type="image/png" href="images/icon.png">
+    </head>
+
+    <body>
+        <header>
+            <div class="main">
+                <ul class="topMenu">
+                    <li><a href="/index">Acasa</a></li>
+                    <li><a href="/produse">Produse</a></li>
+                    <li><a href="/promotii">Promotii</a></li>
+                    <li><a href="/cosulmeu">Cosul meu</a></li>
+                    <li><a href="/recenzii">Recenzii</a></li>
+                </ul>
+            </div>
+        
+            <div class="Anunturi">
+                <h1 >! Oferim livrare gratuita</h1>
+                <h1 >! Calitate premium</h1>
+                <h1 >! 10% reducere la unele produse in fiecare zi</h1>
+            </div>
+            <h1 class="Suplimente"> Toate produsele </h1>
+            <div class="butonSortare">
+                <h1 class="buttonSort"><button onclick="sortAsc()"> Sortare ascendenta dupa pret </button></h1>        
+                <h1 class="buttonSort"><button onclick="sortDesc()"> Sortare descendenta dupa pret </button></h1>
+            </div>
+            <div class="Galerie">
+                <a target="_blank" href="/produs1">
+                    <img src="images/1.jpg" alt="Impact Whey protein" width="600" height="200" onclick="produs1()">
+                </a>
+                <a href="/produs1" style="color: black"  onclick="produs1()"><div class="desc">Impact Whey protein</div></a>
+                <div class="desc"><div class="pretVechi"> 40.00 Lei </div></div>
+                <div class="desc pret"> 36.00 Lei </div>
+            </div>
+            <div class="Galerie">
+                <form action="/produs1">
+                <a target="_blank" href="/produs1">
+                    <img src="images/2.jpg" alt="Impact Whey Isolate" width="600" height="200" onclick="produs2()">
+                </a>
+                <a href="/produs1" style="color: black"><div class="desc" onclick="produs2()">Impact Whey Isolate</div></a>
+                <div class="desc"><div class="pretVechi"> 75.00 Lei </div></div>
+                <div class="desc pret"> 67.00 Lei </div>   
+                </form>
+            </div>
+            <div class="Galerie">
+                <form action="/produs1">
+                <a target="_blank" href="/produs1">
+                    <img src="images/3.jpg" id ="img1" alt="Impact Diet Whey" width="600" height="200" onclick="produs3()">
+                </a>
+                <a href="/produs1" style="color: black" onclick="produs3()"><div class="desc"> Impact Diet Whey </div></a>
+                <div class="desc pret"> 100.00 Lei </div> 
+                </form>
+            </div>   
+            <div class="Galerie">
+                <form action="/produs1">
+                <a target="_blank" href="/produs1">
+                    <img src="images/4.jpg" alt="Weight Gainer" width="600" height="200" onclick="produs4()">
+                </a>
+                <a href="/produs1" style="color: black" onclick="produs4()"><div class="desc"> Weight Gainer Blend </div></a>
+                <div  class="desc pret "> 170.00 Lei </div>  
+                </form>
+            </div>
+            <div class="Galerie">
+                <form action="/produs1">
+                <a target="_blank" href="/produs1">
+                    <img src="images/5.jpg" alt="Creatine Monohidrite" width="600" height="200" onclick="produs5()">
+                </a>
+                <a href="/produs1" style="color: black" onclick="produs5()"><div class="desc"> Creatine Monohidrite </div></a>
+                <div  class="desc pret"> 25.00 Lei </div>  
+                </form>
+            </div>
+        </div>    
+        </header>
+    <script src="javascripts/produsejv.js"></script>
+    </body>
+</html>

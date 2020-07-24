@@ -1,0 +1,123 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+body {
+    font-family: Arial;
+    padding: 20px;
+    background: white;
+  }
+
+.titluCont{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    background-color:grey;
+}
+.titlu{
+    font-family: 'Times New Roman', Times, serif;
+    color: black;
+    font-size: 25px;
+}
+.slogan{
+    font-family: cursive;
+    font-style: italic;
+    color:rgb(134, 21, 21);
+    font-size: 25px;
+}
+
+.cont{
+    font-size: 25px;
+}
+.btn{
+    background-color:  grey;
+    border: solid rgb(134, 21, 21);
+    color: black;
+    padding: 15px 25px;
+    text-align: center;
+    font-size:20px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: grey;
+    border: solid black;
+    color:  rgb(134, 21, 21);
+}
+
+.titluCont h1 {
+    width: 32%;
+    text-align: center;
+}
+
+
+div h1{
+    display: inline-block;
+}
+
+
+header{
+    background-color: white;
+    height : auto;
+    background-size: cover;
+    background-position: center;
+}
+
+.main ul{
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.822);
+    height: 40px;
+    padding-top: 10px;
+    border-bottom: solid grey;
+    border-top: solid black;
+}
+
+.main ul li{
+    display: inline-block;
+    width: 16%;
+    text-align: center;
+}
+
+.main ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+.Anunturi{
+    padding-top: 3%;
+    padding-bottom: 3%;;
+    font-size: 7px;
+    font-family: cursive;
+    font-style: italic;
+    background-color: rgb(223, 222, 222);
+    text-align: center;
+    border-bottom: solid black;
+    color: rgb(151, 30, 30);
+}
+
+.Anunturi h1{
+    width: 30%;
+    text-align: center;
+}
+.linie{
+    width: 100%;
+}
+.coloana {
+    float: left;
+    width: 49.90%;
+    height: 70vh;
+  }
+img{
+    height: 70vh;
+    width: 100%;
+}
+#img2{
+    border-left: solid black;
+}
+.coloana p{
+    border: solid black;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+    background-color: rgba(0, 0, 0, 0.822);
+    color: whitesmoke;
+}

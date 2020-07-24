@@ -1,0 +1,133 @@
+*{
+    margin : 0;
+    padding : 0;
+}
+.main ul{
+    list-style-type: none;
+    background-color: rgba(0, 0, 0, 0.822);
+    height: 40px;
+    padding-top: 10px;
+    border-bottom: solid grey;
+    border-top: solid black;
+
+}
+
+.main ul li{
+    display: inline;
+    margin-left: 9%;
+}
+
+.main ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+}
+.progress {
+    margin-top : 100px;
+}
+.progress ul {
+    text-align: center;
+}
+.progress ul li {
+    display: inline-block;
+    width: 15%;
+    position: relative;
+    
+}
+.numar {
+    border-radius: 100%;
+    width: 10%;
+    margin-left: 45%;
+    background : lightgrey;
+}
+.intrebari {
+    margin-top: 20%;
+}
+
+.numar::after {
+    content: '';
+    background: lightgrey;
+    height: 5px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: -50%;
+    z-index: -1;
+    top: 7px;
+}
+
+ul li:first-child .numar::after{
+    left: 53%;
+}
+
+fieldset {
+    text-align: center;
+    border: solid black;
+    margin: 5% 20%;
+    height: auto;
+}
+fieldset input{
+    margin-top: 50px;
+}
+
+.recenzie {
+    text-align: left;    
+}
+
+.urmator {
+    background-color: black;
+    color: whitesmoke;
+    border: solid whitesmoke;
+    height: 50px;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+.urmator:hover{
+    background-color: whitesmoke;
+    color: black;
+    border: solid black;
+    height: 50px;
+    cursor: pointer;
+}
+
+.anterior {
+    background-color: black;
+    color: whitesmoke;
+    border: solid whitesmoke;
+    height: 50px;
+    margin-bottom: 5%;
+    cursor: pointer;
+}
+
+.anterior:hover{
+    background-color: whitesmoke;
+    color: black;
+    border: solid black;
+    height: 50px;
+    cursor: pointer;
+}
+fieldset:not(:first-of-type) {
+    display: none;
+}
+
+.active{
+    background: green;
+}
+
+.active:before, .active:after {
+    background: green;
+}
+
+.pozitiv {
+    position: relative;
+    top: -400px;
+    margin-left: -500px;
+    display: none;
+}
+.negativ {
+    position: relative;
+    top: -500px;
+    margin-left: 500px;
+    display: none;
+}

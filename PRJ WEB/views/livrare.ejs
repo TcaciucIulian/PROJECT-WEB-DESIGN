@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> BESTrong </title>
+        <link rel="stylesheet" href="stylesheets/livrarecss.css">
+        <link rel="shortcut icon" type="image/png" href="images/icon.png">
+    </head>
+    <body>
+        <div class="titluCont">
+                <h1 class="titlu"> BESTrong </h1>
+                <h1 class="slogan"> Suplimente proteice </h1>
+                <h1 class="cont"><button class="btn">Intra in cont</button></h1>
+        </div>
+        <header>
+            <div class="main">
+                <ul class="topMenu">
+                    <ul class="topMenu">
+                        <li><a href="/index">Acasa</a></li>
+                        <li><a href="/produse">Produse</a></li>
+                        <li><a href="/promotii">Promotii</a></li>
+                        <li><a href="/cosulmeu">Cosul meu</a></li>
+                        <li><a href="/recenzii">Recenzii</a></li>
+                    </ul>
+                </ul>
+            </div>
+
+            <div class="formular">
+                <h3 id="titluFormular"> Formular de livrare </h3>
+                <label for="nume"> Nume si prenume </label>
+                <input type="text" placeholder="Tcaciuc Iulian">
+                <label for="email"> Email </label>
+                <input type="text" name="email" placeholder="iulian@example.com">
+                <label for="adr"> Adresa </label>
+                <input type="text" name="Adresa" placeholder="Petru Rares,  numarul 8">
+                <label for="oras"> Oras</label>
+                <input type="text" name="city" placeholder="Bucuresti"> 
+            </div>
+            <a href="/cosulmeu"><button class="btnLivrare" onclick="alertareMesaj()"> Plaseaza comanda </button></h1></a>
+            
+        </header>
+        <script>
+            function alertareMesaj() {
+                alert("Comanda a fost plasata ");
+            }
+        </script>
+    </body>
+</html>
