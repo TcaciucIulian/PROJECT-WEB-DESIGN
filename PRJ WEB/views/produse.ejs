@@ -5,77 +5,148 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link rel="stylesheet" href="stylesheets/produsecss.css">
         <link rel="shortcut icon" type="image/png" href="images/icon.png">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="css/boostrap.min.css">
     </head>
 
     <body>
-        <header>
-            <div class="main">
-                <ul class="topMenu">
-                    <li><a href="/index">Acasa</a></li>
-                    <li><a href="/produse">Produse</a></li>
-                    <li><a href="/promotii">Promotii</a></li>
-                    <li><a href="/cosulmeu">Cosul meu</a></li>
-                    <li><a href="/recenzii">Recenzii</a></li>
-                </ul>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="/index"> BeSTRONG </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index">Acasa </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/produse"> Produse </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/cosulmeu">Cosul Meu </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/recenzii"> Recenzii </a>
+                        </li>
+                        <button class="btn btn-dark"><a href="/login"> Intra in cont </button> </a>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container" style="background-color: whitesmoke">
+            <div class="row mt-4 ml-2" >
+                <div class="col-sm-4">
+                    <div> Toate produsele </div>
+                </div>
+                <div class="col-sm-8">
+                    <div class="container d-flex flex-row-reverse">
+                            <div class="dropdown">
+                                <button class="btn btn-white btn-sm dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Fitrare
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                  <a class="dropdown-item" href="#" onclick="sortAsc()">Pret minim</a>
+                                  <a class="dropdown-item" href="#" onclick="sortDesc()">Pret maxim</a>
+                                </div>
+                            </div>
+                    </div>
+                </div>
             </div>
-        
-            <div class="Anunturi">
-                <h1 >! Oferim livrare gratuita</h1>
-                <h1 >! Calitate premium</h1>
-                <h1 >! 10% reducere la unele produse in fiecare zi</h1>
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col produs-grid">
+                                <div class="image">
+                                    <a href="/produs1">
+                                        <img src="images/1.jpg" class="w-100" onclick="produs1()">
+                                    </a>
+                                </div>
+                                <h5 class="text-center"> Impact whey protein </h5>
+                                <h6 class="text-center" > 36.00 Lei </h6>
+                                <a class="btn cumpara"> Cumpara </a>
+                            </div>
+                            <div class="col produs-grid">
+                                <div class="image">
+                                    <a href="/produs1">
+                                        <img src="images/3.jpg" class="w-100" onclick="produs3()">
+                                    </a>
+                                </div>
+                                <h5 class="text-center" > Impact whey isolate </h5>
+                                <h6 class="text-center" > 67.00 Lei  </h6>
+                                <a class="btn cumpara"> Cumpara </a>
+                            </div>
+                            <div class="col produs-grid">
+                                <div class="image">
+                                    <a href="/produs1">
+                                        <img src="images/2.jpg" class="w-100" onclick="produs2()">
+                                    </a>
+                                </div>
+                                <h5 class="text-center"> Impact diet whey </h5>
+                                <h6 class="text-center"> 170.00 Lei </h6>
+                                <a class="btn cumpara"> Cumpara </a>
+                            </div>
+                            <div class="col produs-grid">
+                                <div class="image">
+                                    <a href="/produs1">
+                                        <img src="images/3.jpg" class="w-100" onclick="produs3()">
+                                    </a>
+                                </div>
+                                <h5 class="text-center" > Impact whey isolate </h5>
+                                <h6 class="text-center" > 67.00 Lei  </h6>
+                                <a class="btn cumpara"> Cumpara </a>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col produs-grid">
+                                <div class="image">
+                                    <a href="/produs1">
+                                        <img src="images/3.jpg" class="w-100" onclick="produs3()">
+                                    </a>
+                                </div>
+                                <h5 class="text-center" > Impact whey isolate </h5>
+                                <h6 class="text-center" > 67.00 Lei  </h6>
+                                <a class="btn cumpara"> Cumpara </a>
+                            </div>
+                            <div class="col produs-grid">
+                                <div class="image">
+                                    <a href="/produs1">
+                                        <img src="images/2.jpg" class="w-100" onclick="produs2()">
+                                    </a>
+                                </div>
+                                <h5 class="text-center"> Impact diet whey </h5>
+                                <h6 class="text-center"> 170.00 Lei </h6>
+                                <a class="btn cumpara"> Cumpara </a>
+                            </div>
+                            <div class="col produs-grid">
+                                <div class="image">
+                                    <a href="/produs1">
+                                        <img src="images/1.jpg" class="w-100" onclick="produs1()">
+                                    </a>
+                                </div>
+                                <h5 class="text-center"> Impact whey protein </h5>
+                                <h6 class="text-center" > 36.00 Lei </h6>
+                                <a class="btn cumpara"> Cumpara </a>
+                            </div>
+                            <div class="col produs-grid">
+                                <div class="image">
+                                    <a href="/produs1">
+                                        <img src="images/1.jpg" class="w-100" onclick="produs1()">
+                                    </a>
+                                </div>
+                                <h5 class="text-center"> Impact whey protein </h5>
+                                <h6 class="text-center" > 36.00 Lei </h6>
+                                <a class="btn cumpara"> Cumpara </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <h1 class="Suplimente"> Toate produsele </h1>
-            <div class="butonSortare">
-                <h1 class="buttonSort"><button onclick="sortAsc()"> Sortare ascendenta dupa pret </button></h1>        
-                <h1 class="buttonSort"><button onclick="sortDesc()"> Sortare descendenta dupa pret </button></h1>
-            </div>
-            <div class="Galerie">
-                <a target="_blank" href="/produs1">
-                    <img src="images/1.jpg" alt="Impact Whey protein" width="600" height="200" onclick="produs1()">
-                </a>
-                <a href="/produs1" style="color: black"  onclick="produs1()"><div class="desc">Impact Whey protein</div></a>
-                <div class="desc"><div class="pretVechi"> 40.00 Lei </div></div>
-                <div class="desc pret"> 36.00 Lei </div>
-            </div>
-            <div class="Galerie">
-                <form action="/produs1">
-                <a target="_blank" href="/produs1">
-                    <img src="images/2.jpg" alt="Impact Whey Isolate" width="600" height="200" onclick="produs2()">
-                </a>
-                <a href="/produs1" style="color: black"><div class="desc" onclick="produs2()">Impact Whey Isolate</div></a>
-                <div class="desc"><div class="pretVechi"> 75.00 Lei </div></div>
-                <div class="desc pret"> 67.00 Lei </div>   
-                </form>
-            </div>
-            <div class="Galerie">
-                <form action="/produs1">
-                <a target="_blank" href="/produs1">
-                    <img src="images/3.jpg" id ="img1" alt="Impact Diet Whey" width="600" height="200" onclick="produs3()">
-                </a>
-                <a href="/produs1" style="color: black" onclick="produs3()"><div class="desc"> Impact Diet Whey </div></a>
-                <div class="desc pret"> 100.00 Lei </div> 
-                </form>
-            </div>   
-            <div class="Galerie">
-                <form action="/produs1">
-                <a target="_blank" href="/produs1">
-                    <img src="images/4.jpg" alt="Weight Gainer" width="600" height="200" onclick="produs4()">
-                </a>
-                <a href="/produs1" style="color: black" onclick="produs4()"><div class="desc"> Weight Gainer Blend </div></a>
-                <div  class="desc pret "> 170.00 Lei </div>  
-                </form>
-            </div>
-            <div class="Galerie">
-                <form action="/produs1">
-                <a target="_blank" href="/produs1">
-                    <img src="images/5.jpg" alt="Creatine Monohidrite" width="600" height="200" onclick="produs5()">
-                </a>
-                <a href="/produs1" style="color: black" onclick="produs5()"><div class="desc"> Creatine Monohidrite </div></a>
-                <div  class="desc pret"> 25.00 Lei </div>  
-                </form>
-            </div>
-        </div>    
-        </header>
+        </div>  
+                
+        </div>
     <script src="javascripts/produsejv.js"></script>
     </body>
 </html>

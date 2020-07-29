@@ -2,32 +2,38 @@
 <html>
     <head>
         <title> BeStrong </title>
-        <link rel="stylesheet" href="stylesheets/cosulmeucss.css">
+        <link rel="stylesheet" href="stylesheets/cosulmeu.css">
         <link rel="shortcut icon" type="image/png" href="images/icon.png">
+        <link rel="stylesheet" type="text/css" href="css/boostrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
     </head>
 
     <body>
-        <div class="titluCont">
-                <h1 class="titlu"> BeStrong </h1>
-                <h1 class="slogan"> Suplimente proteice </h1>
-                <h1 class="cont"><a href="/login"><button class="btn">Intra in cont</button></a></h1>
-        </div>
-        <header>
-            <div class="main">
-                <ul class="topMenu">
-                    <li><a href="/index">Acasa</a></li>
-                    <li><a href="/produse">Produse</a></li>
-                    <li><a href="/promotii">Promotii</a></li>
-                    <li><a href="/cosulmeu">Cosul meu</a></li>
-                    <li><a href="/recenzii">Recenzii</a></li>
-                </ul>
-            </div>
-            <div class="Anunturi">
-                <h1>! Oferim cele mai bune produse </h1>
-                <h1>! Calitate premium</h1>
-                <h1>! 10% reducere la unele produse in fiecare zi</h1>
-            </div>
-            <div class="cos">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                    <a class="navbar-brand" href="/index"> BeSTRONG </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index">Acasa </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/produse"> Produse </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/cosulmeu">Cosul Meu </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/recenzii"> Recenzii </a>
+                            </li>
+                            <button class="btn btn-dark"><a href="/login"> Intra in cont </button> </a>
+                        </ul>
+                    </div>
+                </nav>
+                <div class="cos">
                     <h1 id="titlu"> Cosul meu </h1>
                     <div class="Produse">
                         <h1 id="item"> Produs </h1>
@@ -37,12 +43,12 @@
             </div>
             <div class="cos-total">
                 <strong class="cost-livrare">Cost livrare: </strong>
-                <span class="cost-livrare" id="livrare"> 10 Lei </span>
+                <span class="cost-livrare" id="livrare"> 0 Lei </span>
                 <strong>Total: </strong>
                 <span class="cos-pret"> Pret Total </span>
             </div>
-            <a href="/livrare"><button class="cumpara" type="button" onclick="stergereLocalStorage()"> Cumpara </button> </a>
-        </header>
+            <a href="/livrare"><button class="cumpara mt-5 mb-3" style="width: 100%; background-color: white;" type="button" onclick="stergereLocalStorage()"> Cumpara </button> </a>
+            </div>
         <script src="javascripts/cosjv.js"></script>
     </body>
 </html>
